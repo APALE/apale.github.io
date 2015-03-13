@@ -32,46 +32,24 @@ title: Association en Pharmacie d'Aide aux Langues Étrangères
         <h2>Prochains événements</h2>
 
         <ul class="events">
-            <li>
-                <strong>23/03/2014</strong>
-                Présentation de l'association aux nouveaux adhérents
-            </li>
-            <li>
-                <strong>16/04/2014</strong>
-                Récolte des cotisations
-            </li>
-            <li>
-                <strong>05/05/2014</strong>
-                Voyage en Finlande à la rencontre des autochtones
-            </li>
-            <li>
-                <strong>05/05/2014</strong>
-                Voyage sur Mars
-            </li>
+            {% for event in site.data.events limit:6 %}
+                <li>
+                    <strong>{{ event.date | date: "%d/%d/%Y" }}</strong>
+                    {{ event.title }}
+                </li>
+            {% endfor %}
         </ul>
     </div>
     <div class="col-md-6">
         <h2>Sur le blog...</h2>
 
-        <h3><strong>19/03/2014 :</strong> Mise en ligne du site Internet</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odio, qui. Dolorum necessitatibus obcaecati sed
-            sint veniam? Aliquam deserunt, iure odio officia placeat quaerat quis reiciendis rerum sapiente, sint
-            tempora? <a href="#">Lire l'article &raquo;</a>
-        </p>
-
-        <h3><strong>19/03/2014 :</strong> Mise en ligne du site Internet</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odio, qui. Dolorum necessitatibus obcaecati sed
-            sint veniam? Aliquam deserunt, iure odio officia placeat quaerat quis reiciendis rerum sapiente, sint
-            tempora? <a href="#">Lire l'article &raquo;</a>
-        </p>
-
-        <h3><strong>19/03/2014 :</strong> Mise en ligne du site Internet</h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis odio, qui. Dolorum necessitatibus obcaecati sed
-            sint veniam? Aliquam deserunt, iure odio officia placeat quaerat quis reiciendis rerum sapiente, sint
-            tempora? <a href="#">Lire l'article &raquo;</a>
-        </p>
+        {% for post in site.posts limit:3 %}
+            <h3>
+                <strong>{{ post.date | date: "%d/%m/%Y") }} :</strong>
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </h3>
+            <p>{{ post.excerpt }}</p>
+            <p class="read"><a href="{{ post.url }}">Lire l'article &raquo;</a></p>
+        {% endfor %}
     </div>
 </div>
