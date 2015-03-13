@@ -35,9 +35,21 @@ Les modifications seront alors visibles sous quelques minutes, le temps de recon
 
 ## Lancement du site
 
-Pour lancer le site en local, une fois [Docker](https://docs.docker.com/) installé, récupérez toutes les dépendences :
+### Pré-installation des outils
+
+Afin de pouvoir modifier le site, exécutez les commandes suivantes afin d'installer les outils nécessaires :
 
 ``` sh
+sudo apt-get update
+sudo apt-get install git-core docker.io
+```
+
+### Serveur local 
+
+Pour lancer le site en local, une fois [Docker](https://docs.docker.com/) installé, récupérez le projet et ses dépendences :
+
+``` sh
+git clone https://github.com/APALE/apale.github.io.git
 make setup
 ```
 
