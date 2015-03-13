@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }} - APALE</title>
+    <meta name="robots" content="noindex,nofollow"/> <!-- Blocage du référencement -->
+    <link rel="stylesheet" href="/css/styles.css"/>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1><a href="/">Association en Pharmarcie d'Aide aux Langues Étrangères</a></h1>
+        {% include menu.html %}
+    </header>
+
+    {{ content }}
+
+    <footer>
+        <div class="row-fluid">
+            <div class="col-md-6">
+                <h4>Réseaux sociaux</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Liens partenaires</h4>
+                <ul>
+                    <li><a href="#">Université de Lorraine</a></li>
+                    <li><a href="#">Bureau des Étudiants</a></li>
+                    <li><a href="#">ERASMUS</a></li>
+                </ul>
+            </div>
+        </div>
+        <p><small>APALE - Association en Pharmacie d'Aide aux Langues Étrangères - Tous droits réservés.</small></p>
+    </footer>
+</div>
+</body>
+</html>

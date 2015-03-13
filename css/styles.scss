@@ -3,6 +3,7 @@
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 $green: #2A6A2A;
+$lightGreen: #4EAF4E;
 
 html, body {
     height: 100%;
@@ -22,6 +23,12 @@ body {
 header {
     h1 {
         text-align: center;
+        a {
+            color: inherit;
+            &:hover {
+                text-decoration: none;
+            }
+        }
     }
 
     nav {
@@ -35,6 +42,9 @@ header {
 
 a {
     color: $green;
+    &:hover {
+        color: $lightGreen;
+    }
 }
 
 .float-left {
