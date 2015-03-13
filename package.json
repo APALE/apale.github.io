@@ -1,0 +1,23 @@
+{
+  "name": "apale.github.io",
+  "version": "0.0.1",
+  "description": "Site Internet de l'association APALE",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap-sass": "^3.3.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/APALE/apale.github.io.git"
+  },
+  "author": "Jonathan Petitcolas <petitcolas.jonathan@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/APALE/apale.github.io/issues"
+  },
+  "homepage": "https://github.com/APALE/apale.github.io"
+}

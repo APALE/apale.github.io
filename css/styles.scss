@@ -1,0 +1,54 @@
+---
+---
+@import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+$green: #2A6A2A;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("./images/background.png") $green;
+}
+
+.wrapper {
+    @extend .container;
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+header {
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 10px 30px;
+        }
+    }
+}
+
+a {
+    color: $green;
+}
+
+.float-left {
+    margin-right: 20px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+
+footer {
+    p {
+        text-align: center;
+    }
+}
