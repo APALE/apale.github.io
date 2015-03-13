@@ -16,7 +16,7 @@ body {
 .wrapper {
     @extend .container;
     background: #fff;
-    height: 100%;
+    min-height: 100%;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
@@ -38,12 +38,32 @@ header {
             padding: 10px 30px;
         }
     }
+
+    margin-bottom: 50px;
 }
 
 a {
     color: $green;
     &:hover {
         color: $lightGreen;
+    }
+}
+
+.members {
+    .member {
+        display: inline-block;
+        height: 100px;
+        width: 45%;
+        strong {
+            display: inline-block;
+            padding-top: 25px;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+            max-width: 100px;
+            border-radius: 200px;
+        }
     }
 }
 
@@ -58,6 +78,7 @@ a {
 
 
 footer {
+    margin-top: 50px;
     p {
         text-align: center;
     }

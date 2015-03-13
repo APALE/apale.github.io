@@ -1,0 +1,25 @@
+---
+layout: default
+title: Membres de l'Association
+---
+
+<h1>Membres de l'association</h1>
+
+<p>Notre association compte aujourd'hui <strong>{{ site.data.members | size }} membres</strong>.</p>
+
+<ul class="members">
+    {% for member in site.data.members %}
+        <li class="member">
+            {% if member.picture %}
+                <div class="picture">
+                    <img
+                        src="/images/membres/{{ member.picture }}"
+                        alt="{{ member.first_name }} {{ member.last_name }}, {{ member.title }}, APALE"
+                        title="{{ member.first_name }} {{ member.last_name }}, {{ member.title }}" />
+                </div>
+            {% endif %}
+            <strong>{{ member.first_name }}&nbsp;{{ member.last_name }}</strong><br />
+            <span class="title">{{ member.title }}</span>
+        </li>
+    {% endfor %}
+</ul>
