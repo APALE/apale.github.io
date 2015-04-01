@@ -1,3 +1,4 @@
 sass:
+  style: compressed
   load_paths:
     - node_modules
