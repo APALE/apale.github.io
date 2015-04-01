@@ -1,0 +1,84 @@
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$green: #2A6A2A;
+$lightGreen: #4EAF4E;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("./images/background.png") $green;
+}
+
+.wrapper {
+    @extend .container;
+    background: #fff;
+    min-height: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    padding: 10px 50px;
+}
+
+header {
+    h1 {
+        text-align: center;
+        a {
+            color: inherit;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    nav {
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 10px 30px;
+        }
+    }
+
+    margin-bottom: 50px;
+}
+
+a {
+    color: $green;
+    &:hover {
+        color: $lightGreen;
+    }
+}
+
+.members {
+    .member {
+        display: inline-block;
+        height: 100px;
+        width: 45%;
+        strong {
+            display: inline-block;
+            padding-top: 25px;
+        }
+        img {
+            float: left;
+            margin-right: 20px;
+            max-width: 100px;
+            border-radius: 200px;
+        }
+    }
+}
+
+.float-left {
+    margin-right: 20px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+
+footer {
+    margin-top: 50px;
+    p {
+        text-align: center;
+    }
+}
