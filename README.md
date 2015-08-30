@@ -41,7 +41,10 @@ Afin de pouvoir modifier le site, exécutez les commandes suivantes afin d'insta
 
 ``` sh
 sudo apt-get update
-sudo apt-get install git-core nodejs npm
+sudo apt-get install git-core
+
+curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+sudo apt-get install nodejs
 
 wget -qO- https://get.docker.com/ | sh
 sudo usemrod -aG docker `whoami`
