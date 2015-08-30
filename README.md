@@ -41,7 +41,10 @@ Afin de pouvoir modifier le site, exécutez les commandes suivantes afin d'insta
 
 ``` sh
 sudo apt-get update
-sudo apt-get install git-core docker.io
+sudo apt-get install git-core nodejs npm
+
+wget -qO- https://get.docker.com/ | sh
+sudo usemrod -aG docker `whoami`
 ```
 
 ### Serveur local 
